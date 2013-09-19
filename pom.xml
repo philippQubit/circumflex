@@ -16,19 +16,7 @@
 
   <modules>
     <module>core</module>
-    <module>diff</module>
-    <module>xml</module>
-    <module>web</module>
-    <module>security</module>
-    <module>markeven</module>
-    <module>ftl</module>
-    <module>mail</module>
-    <module>docco</module>
     <module>orm</module>
-    <module>scalaconsole</module>
-    <module>maven-plugin</module>
-    <module>cluster</module>
-    <module>archetype</module>
   </modules>
 
   <properties>
