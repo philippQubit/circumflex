@@ -52,7 +52,7 @@ trait Relation[PK, R <: Record[PK, R]]
  companion objects), then record class is inferred automatically. Otherwise
  you should override the `recordClass` method.
   */
-  val _recordClass: Class[R] = Class.forName(
+  val _recordClass: Class[R] = this.getClass().getClassLoader().loadClass(
     this.getClass.getName.replaceAll("\\$(?=\\Z)", ""))
       .asInstanceOf[Class[R]]
   def recordClass: Class[R] = _recordClass
